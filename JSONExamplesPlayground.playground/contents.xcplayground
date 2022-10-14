@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Simple JSON'/>
+        <page name='Convert from snake case'/>
+        <page name='Maping diffferent key names'/>
+        <page name='NobelJson_Local'/>
+        <page name='Nobel_ From Internet'/>
+        <page name='JSon with dictionary'/>
+    </pages>
+</playground>
