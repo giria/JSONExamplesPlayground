@@ -12,6 +12,7 @@
         <page name='Result'/>
         <page name='Result with http request'/>
         <page name='AsycAwait-1'/>
-        <page name='Transcript'/>
+        <page name='CompletionHandler-Result'/>
+        <page name='AsyncAwait'/>
     </pages>
 </playground>

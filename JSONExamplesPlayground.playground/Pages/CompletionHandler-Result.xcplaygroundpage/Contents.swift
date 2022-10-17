@@ -72,8 +72,7 @@ import UIKit
 // }
 
 func load(_ url: URL,
-     completionHandler: @escaping (Result<UIImage, Error>) -> Void)
-     -> URLSessionDataTask {
+     completionHandler: @escaping (Result<UIImage, Error>) -> Void) {
          let task = URLSession.shared.dataTask(with: url) { data, response, error in
          if let error = error {
              completionHandler(.failure(error))
@@ -100,7 +99,6 @@ func load(_ url: URL,
      }
 
      task.resume()
-     return task
  }
 
 
@@ -118,20 +116,20 @@ load(url) { result in
 }
 
 
-// Now with async await
-
-func fetchImages() async throws -> [UIImage] {
-    // .. perform data request
-}
-
-
-//using the async await
-do {
-    let images = try await fetchImages()
-    print("Fetched \(images.count) images.")
-} catch {
-    print("Fetching images failed with error \(error)")
-}
+//// Now with async await
+//
+//func fetchImages() async throws -> [UIImage] {
+//    // .. perform data request
+//}
+//
+//
+////using the async await
+//do {
+//    let images = try await fetchImages()
+//    print("Fetched \(images.count) images.")
+//} catch {
+//    print("Fetching images failed with error \(error)")
+//}
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 //: [Next](@next)
