@@ -19,7 +19,7 @@ let json = """
 
 let data = Data(json.utf8)
 
-// MARK: - WelcomeValue
+
 struct FullBrandList: Codable {
     let postalcode, name, brand: String
 }
