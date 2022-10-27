@@ -1,7 +1,12 @@
 
 //:## Simple JSON example
 //: Parsing JSON
-
+//: # Useful Links
+//: JSON Structure: [https://quicktype.io](https://quicktype.io)
+//:
+//: JSON Visualization:  [JSON Crack](https://jsoncrack.com)
+//:
+//: Dummy JSON   [dummyJson](https://dummyjson.com/docs/http)
 
 import Foundation
 
