@@ -6,13 +6,14 @@
         <page name='Maping diffferent key names'/>
         <page name='NobelJson_Local'/>
         <page name='Nobel_ From Internet'/>
+        <page name='Nobel_From_Interner(Simpler)'/>
         <page name='JSon with dictionaryLocal'/>
         <page name='URLRequest with blocks'/>
         <page name='URLRequest-2'/>
         <page name='Result'/>
         <page name='Result with http request'/>
-        <page name='AsycAwait-1'/>
         <page name='CompletionHandler-Result'/>
         <page name='AsyncAwait'/>
+        <page name='CompletionHandler-Image'/>
     </pages>
 </playground>

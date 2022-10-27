@@ -13,6 +13,8 @@
 //: [JSON Crack](https://jsoncrack.com)
 
 import Foundation
+import PlaygroundSupport
+PlaygroundPage.current.needsIndefiniteExecution = true
 
 let json = """
 {
@@ -20,283 +22,68 @@ let json = """
         {
             "awardYear": "2020",
             "category": {
-                "en": "Literature",
-                "no": "Litteratur",
-                "se": "Litteratur"
+                "en": "Economic Sciences",
+                "no": "Økonomi",
+                "se": "Ekonomi"
             },
             "categoryFullName": {
-                "en": "The Nobel Prize in Literature",
-                "no": "Nobelprisen i litteratur",
-                "se": "Nobelpriset i litteratur"
+                "en": "The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel",
+                "no": "Sveriges Riksbanks pris i økonomisk vitenskap til minne om Alfred Nobel",
+                "se": "Sveriges Riksbanks pris i ekonomisk vetenskap till Alfred Nobels minne"
             },
-            "dateAwarded": "2020-10-08",
+            "dateAwarded": "2020-10-12",
             "prizeAmount": 10000000,
             "prizeAmountAdjusted": 10000000,
             "links": [
                 {
                     "rel": "nobelPrize",
-                    "href": "https://api.nobelprize.org/2/nobelPrize/lit/2020",
+                    "href": "https://api.nobelprize.org/2/nobelPrize/eco/2020",
                     "action": "GET",
                     "types": "application/json"
                 }
             ],
             "laureates": [
                 {
-                    "id": "993",
+                    "id": "995",
                     "knownName": {
-                        "en": "Louise Glück"
+                        "en": "Paul R. Milgrom"
                     },
                     "fullName": {
-                        "en": "Louise Glück"
-                    },
-                    "portion": "1",
-                    "sortOrder": "1",
-                    "motivation": {
-                        "en": "for her unmistakable poetic voice that with austere beauty makes individual existence universal",
-                        "se": "för hennes omisskännliga poetiska röst, som med sträng skönhet gör den enskilda människans existens universell"
-                    },
-                    "links": [
-                        {
-                            "rel": "laureate",
-                            "href": "https://api.nobelprize.org/2/laureate/993",
-                            "action": "GET",
-                            "types": "application/json"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "awardYear": "2020",
-            "category": {
-                "en": "Peace",
-                "no": "Fred",
-                "se": "Fred"
-            },
-            "categoryFullName": {
-                "en": "The Nobel Peace Prize",
-                "no": "Nobels fredspris",
-                "se": "Nobels fredspris"
-            },
-            "dateAwarded": "2020-10-09",
-            "prizeAmount": 10000000,
-            "prizeAmountAdjusted": 10000000,
-            "links": [
-                {
-                    "rel": "nobelPrize",
-                    "href": "https://api.nobelprize.org/2/nobelPrize/pea/2020",
-                    "action": "GET",
-                    "types": "application/json"
-                }
-            ],
-            "laureates": [
-                {
-                    "id": "994",
-                    "orgName": {
-                        "en": "World Food Programme",
-                        "no": "Verdens matvareprogram"
-                    },
-                    "acronym": "WFP",
-                    "portion": "1",
-                    "sortOrder": "1",
-                    "motivation": {
-                        "en": "for its efforts to combat hunger, for its contribution to bettering conditions for peace in conflict-affected areas and for acting as a driving force in efforts to prevent the use of hunger as a weapon of war and conflict",
-                        "no": "for dets innsats i kampen mot sult, for dets bidrag til å skape forutsetninger for fred i konfliktutsatte områder, og for å være en pådriver i arbeidet mot bruken av sult som et våpen i krig og konflikt"
-                    },
-                    "links": [
-                        {
-                            "rel": "laureate",
-                            "href": "https://api.nobelprize.org/2/laureate/994",
-                            "action": "GET",
-                            "types": "application/json"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "awardYear": "2020",
-            "category": {
-                "en": "Physics",
-                "no": "Fysikk",
-                "se": "Fysik"
-            },
-            "categoryFullName": {
-                "en": "The Nobel Prize in Physics",
-                "no": "Nobelprisen i fysikk",
-                "se": "Nobelpriset i fysik"
-            },
-            "dateAwarded": "2020-10-06",
-            "prizeAmount": 10000000,
-            "prizeAmountAdjusted": 10000000,
-            "links": [
-                {
-                    "rel": "nobelPrize",
-                    "href": "https://api.nobelprize.org/2/nobelPrize/phy/2020",
-                    "action": "GET",
-                    "types": "application/json"
-                }
-            ],
-            "laureates": [
-                {
-                    "id": "988",
-                    "knownName": {
-                        "en": "Roger Penrose"
-                    },
-                    "fullName": {
-                        "en": "Roger Penrose"
+                        "en": "Paul R. Milgrom"
                     },
                     "portion": "1/2",
                     "sortOrder": "1",
                     "motivation": {
-                        "en": "for the discovery that black hole formation is a robust prediction of the general theory of relativity",
-                        "se": "för upptäckten att bildandet av svarta hål är en robust förutsägelse av den allmänna relativitetsteorin"
+                        "en": "for improvements to auction theory and inventions of new auction formats",
+                        "se": "för förbättringar av auktionsteorin och uppfinningar av nya auktionsformat"
                     },
                     "links": [
                         {
                             "rel": "laureate",
-                            "href": "https://api.nobelprize.org/2/laureate/988",
+                            "href": "https://api.nobelprize.org/2/laureate/995",
                             "action": "GET",
                             "types": "application/json"
                         }
                     ]
                 },
                 {
-                    "id": "989",
+                    "id": "996",
                     "knownName": {
-                        "en": "Reinhard Genzel"
+                        "en": "Robert B. Wilson"
                     },
                     "fullName": {
-                        "en": "Reinhard Genzel"
+                        "en": "Robert B. Wilson"
                     },
-                    "portion": "1/4",
+                    "portion": "1/2",
                     "sortOrder": "2",
                     "motivation": {
-                        "en": "for the discovery of a supermassive compact object at the centre of our galaxy",
-                        "se": "för upptäckten av ett supermassivt kompakt objekt i Vintergatans centrum"
+                        "en": "for improvements to auction theory and inventions of new auction formats",
+                        "se": "för förbättringar av auktionsteorin och uppfinningar av nya auktionsformat"
                     },
                     "links": [
                         {
                             "rel": "laureate",
-                            "href": "https://api.nobelprize.org/2/laureate/989",
-                            "action": "GET",
-                            "types": "application/json"
-                        }
-                    ]
-                },
-                {
-                    "id": "990",
-                    "knownName": {
-                        "en": "Andrea Ghez"
-                    },
-                    "fullName": {
-                        "en": "Andrea Ghez"
-                    },
-                    "portion": "1/4",
-                    "sortOrder": "3",
-                    "motivation": {
-                        "en": "for the discovery of a supermassive compact object at the centre of our galaxy",
-                        "se": "för upptäckten av ett supermassivt kompakt objekt i Vintergatans centrum"
-                    },
-                    "links": [
-                        {
-                            "rel": "laureate",
-                            "href": "https://api.nobelprize.org/2/laureate/990",
-                            "action": "GET",
-                            "types": "application/json"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "awardYear": "2020",
-            "category": {
-                "en": "Physiology or Medicine",
-                "no": "Fysiologi eller medisin",
-                "se": "Fysiologi eller medicin"
-            },
-            "categoryFullName": {
-                "en": "The Nobel Prize in Physiology or Medicine",
-                "no": "Nobelprisen i fysiologi eller medisin",
-                "se": "Nobelpriset i fysiologi eller medicin"
-            },
-            "dateAwarded": "2020-10-05",
-            "prizeAmount": 10000000,
-            "prizeAmountAdjusted": 10000000,
-            "links": [
-                {
-                    "rel": "nobelPrize",
-                    "href": "https://api.nobelprize.org/2/nobelPrize/med/2020",
-                    "action": "GET",
-                    "types": "application/json"
-                }
-            ],
-            "laureates": [
-                {
-                    "id": "985",
-                    "knownName": {
-                        "en": "Harvey J. Alter"
-                    },
-                    "fullName": {
-                        "en": "Harvey J. Alter"
-                    },
-                    "portion": "1/3",
-                    "sortOrder": "1",
-                    "motivation": {
-                        "en": "for the discovery of Hepatitis C virus",
-                        "se": "för upptäckten av hepatit C-virus"
-                    },
-                    "links": [
-                        {
-                            "rel": "laureate",
-                            "href": "https://api.nobelprize.org/2/laureate/985",
-                            "action": "GET",
-                            "types": "application/json"
-                        }
-                    ]
-                },
-                {
-                    "id": "986",
-                    "knownName": {
-                        "en": "Michael Houghton"
-                    },
-                    "fullName": {
-                        "en": "Michael Houghton"
-                    },
-                    "portion": "1/3",
-                    "sortOrder": "2",
-                    "motivation": {
-                        "en": "for the discovery of Hepatitis C virus",
-                        "se": "för upptäckten av hepatit C-virus"
-                    },
-                    "links": [
-                        {
-                            "rel": "laureate",
-                            "href": "https://api.nobelprize.org/2/laureate/986",
-                            "action": "GET",
-                            "types": "application/json"
-                        }
-                    ]
-                },
-                {
-                    "id": "987",
-                    "knownName": {
-                        "en": "Charles M. Rice"
-                    },
-                    "fullName": {
-                        "en": "Charles M. Rice"
-                    },
-                    "portion": "1/3",
-                    "sortOrder": "3",
-                    "motivation": {
-                        "en": "for the discovery of Hepatitis C virus",
-                        "se": "för upptäckten av hepatit C-virus"
-                    },
-                    "links": [
-                        {
-                            "rel": "laureate",
-                            "href": "https://api.nobelprize.org/2/laureate/987",
+                            "href": "https://api.nobelprize.org/2/laureate/996",
                             "action": "GET",
                             "types": "application/json"
                         }
@@ -304,9 +91,10 @@ let json = """
                 }
             ]
         }
+        
     ],
     "meta": {
-        "offset": 2,
+        "offset": 1,
         "limit": 10,
         "nobelPrizeYear": 2020,
         "count": 6,
@@ -316,10 +104,11 @@ let json = """
     },
     "links": {
         "first": "https://masterdataapi.nobelprize.org/2.1/nobelPrizes?offset=0&limit=10&nobelPrizeYear=2020",
-        "self": "https://masterdataapi.nobelprize.org/2.1/nobelPrizes?offset=2&limit=10&nobelPrizeYear=2020",
+        "self": "https://masterdataapi.nobelprize.org/2.1/nobelPrizes?offset=1&limit=10&nobelPrizeYear=2020",
         "last": "https://masterdataapi.nobelprize.org/2.1/nobelPrizes?offset=0&limit=10&nobelPrizeYear=2020"
     }
 }
+
 """
 
 struct Root: Codable {

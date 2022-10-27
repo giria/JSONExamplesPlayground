@@ -24,9 +24,11 @@ struct FullBrandList: Codable {
     let postalcode, name, brand: String
 }
 
-typealias Root = [String: FullBrandList]
+// also we can write as
+//typealias Root = [String: FullBrandList]
+//let decodedData = try? JSONDecoder().decode(Root.self, from: data)
 
-let decodedData = try? JSONDecoder().decode(Root.self, from: data)
+let decodedData = try? JSONDecoder().decode([String : FullBrandList].self, from: data)
 
 print(type(of: decodedData))
 print(decodedData!["40180001"]!.brand)

@@ -44,16 +44,7 @@ struct FullName :Codable {
 
 let urlString = "https://api.nobelprize.org/2.1/nobelPrizes?offset=1&limit=10&sort=asc&nobelPrizeYear=2020&format=json&csvLang=en"
 
-loadJson(fromURLString: urlString) { (result) in
-    switch result {
-    case .success(let data):
-        
-        
-        parse(jsonData: data)
-    case .failure(let error):
-        print(error)
-    }
-}
+
 
 
 private func loadJson(fromURLString urlString: String,
@@ -73,6 +64,20 @@ private func loadJson(fromURLString urlString: String,
             urlSession.resume()
         }
     }
+
+loadJson(fromURLString: urlString) { (result) in
+    switch result {
+    case .success(let data):
+        
+        
+        parse(jsonData: data)
+    case .failure(let error):
+        print(error)
+    }
+}
+
+
+
 private func parse(jsonData: Data) {
     do {
         let decodedData: Root = try JSONDecoder().decode(Root.self,
