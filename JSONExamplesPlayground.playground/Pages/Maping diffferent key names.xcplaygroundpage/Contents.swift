@@ -1,5 +1,5 @@
 //: [Previous](@previous)
-//: ## Mappong different key names
+//: ## Mapping different key names
 //:To make that happen we need to declare a CodingKeys enum: mapping that Codable can use to convert JSON names into properties for our struct.
 
 
