@@ -1,5 +1,11 @@
 //: [Previous](@previous)
 
+//: # URLSession.data(from:) has async version from Swift 5.5
+//:
+//: ## `func data(from url: URL, delegate: URLSessionTaskDelegate? = nil) async throws -> (Data, URLResponse)`
+//:
+//:  Note that returns a tuple (Data,URLResponse)
+
 import Foundation
 import _Concurrency
 import PlaygroundSupport
@@ -83,25 +89,27 @@ struct Wind: Codable {
 }
 
 
-struct ItemLoader {
+
     var session = URLSession.shared
 
     func loadItems(from url: URL) async throws -> Welcome {
-        let (data, _) = try await session.data(from: url)
+        let (data, response) = try await session.data(from: url)
+        print("Respose \(response)")
         let decoder = JSONDecoder()
         return try decoder.decode(Welcome.self, from: data)
     }
-}
 
-let i = ItemLoader()
+
+
  let url = URL(string:"https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=99e1c75b1e7ee176c740cc0fd3b566ee")
 print(url!)
 
 Task.init {
     
     do {
-        let response =  try await i.loadItems(from: url!)
-       // print response
+      
+        let response  = try await loadItems(from: url!)
+        print (response)
         print("id \(response.id)")
         print("id \(response.wind)")
     } catch {
