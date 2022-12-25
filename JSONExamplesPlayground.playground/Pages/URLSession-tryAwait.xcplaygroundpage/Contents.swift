@@ -10,7 +10,7 @@ import Foundation
 import _Concurrency
 import PlaygroundSupport
 PlaygroundPage.current.needsIndefiniteExecution = true
-
+import CoreLocation
 
 
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
@@ -20,8 +20,8 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 import Foundation
 
-// MARK: - Welcome
-struct Welcome: Codable {
+// MARK: - Root
+struct Root: Codable {
     let coord: Coord
     let weather: [Weather]
     let base: String
@@ -92,11 +92,11 @@ struct Wind: Codable {
 
     var session = URLSession.shared
 
-    func loadItems(from url: URL) async throws -> Welcome {
+    func loadItems(from url: URL) async throws -> Root {
         let (data, response) = try await session.data(from: url)
         print("Respose \(response)")
         let decoder = JSONDecoder()
-        return try decoder.decode(Welcome.self, from: data)
+        return try decoder.decode(Root.self, from: data)
     }
 
 
@@ -117,7 +117,7 @@ Task.init {
     }
 }
 
-
+print( CLLocationManager.locationServicesEnabled() )
 
 
 

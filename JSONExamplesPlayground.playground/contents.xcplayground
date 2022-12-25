@@ -17,5 +17,7 @@
         <page name='CompletionHandler-Image'/>
         <page name='Weather'/>
         <page name='URLSession-tryAwait'/>
+        <page name='Itunes-URLSession-tryAwait'/>
+        <page name='tryAwait-Employee'/>
     </pages>
 </playground>
